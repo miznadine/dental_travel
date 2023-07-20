@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles2.css" />
+
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img\smiles2.jpg" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h1>Mexican Dental Travel</h1>
+                    <h2>A Better Way for Dental Care</h2>
+                </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a role="button" class="btn btn-lg btn-outline-info border-radius: 4px;" data-toggle="modal" data-target="#reserveModal" >Make an Appointment</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h3 class="modal-title">Make an appointment</h3>
+                    <button type="button" class="close" data-dismiss="modal">&amp;times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row">
+                                <label for="numCampers" class="col-sm-6 col-form-label">Length of Stay</label>
+                                <div class="col">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option selected>Select...</option>
+                                        <option value="1">1 day</option>
+                                        <option value="2">2 days</option>
+                                        <option value="3">3 days</option>
+                                        <option value="4">4 days</option>
+                                        <option value="5">5 days</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col">   
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="Date" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            </button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/Angel.JPG"
+                        alt="CDMX_angel" />
+                    <div class="media-body align-self-center">
+                        <div class="col">
+                            <h2>Mexico City Tours</h2>
+                        </div>
+                        <p class="d-none d-sm-block">Take a tour of the city</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <h3>Learn about Ancient Cultures</h3>
+                <p class="d-none d-sm-block">Aztec people ruled here</p>
+            </div>
+            <div class="media">
+                <img class="d-flex ml-3 img-thumbnail" src="img/ruins.JPG" alt="Aztec ruins" />
+                <div class="media-body align-self-center">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/Rooftop_dining2.png" alt="rooftop dining" />
+                    <div class="media-body align-self-center">
+                        <h3>Dining with a View</h3>
+                        <p class="d-none d-sm-block">Rooftop Dining</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+        
+        </div>
+
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
